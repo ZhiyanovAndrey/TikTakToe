@@ -1,6 +1,25 @@
 ﻿using System.Reflection.Metadata.Ecma335;
+using System.Text;
 
+static string GetPrintebleState()
+{
+    var sb = new StringBuilder();
+    // цикл до 7 т.к. 8 и 9 инкрементировать не надо
+    for (int i = 0; i < 7; i+=3)
+    {
+        sb.AppendLine("    |     |    ")
+            .AppendLine(
+            $"  {GetPrintebleChar(i)}  |  {GetPrintebleChar(i + 1)}  |  {GetPrintebleChar(i + 2)}")
+            .AppendLine("_____|_____|_____");
+           
+    }
+    return sb.ToString();   
+}
 
+static string GetPrintebleChar(int index)
+{
+    State state
+}
 
 
 
